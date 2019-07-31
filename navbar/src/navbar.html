@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/adc78c8ab0.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"> </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".collapse").click(function(){
+            $(".sidebar").toggleClass("side");
+            $("#toggle").toggleClass("far fa-window-close");
+        });
+    });
+</script>
+    <link rel="stylesheet" href="navbar.css">
+    <title>NavBar</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="item">
+            <ul>
+                <div class="nav-brand"><i class="fas fa-balance-scale-left"></i></div>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-book"></i></a></li>
+                <li><a href="#"><i class="fas fa-coffee"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+                <input type="text" class="searchBox" placeholder="Search...">
+                <button class="btn btb-navbar"><i class="fas fa-search"></i>&nbsp&nbspSubmit</button>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul class="items">
+            <li class="item"><a href="#"><i class="far fa-kiss-beam"></i></a></li>
+            <li class="item"><a href="#"><i class="far fa-grin-beam-sweat"></i></a></li>
+            <li class="item"><a href="#"><i class="far fa-laugh-beam"></i></a></li>
+            <li class="item"><a href="#"><i class="far fa-smile-beam"></i></a></li>
+        </ul>
+    </div>
+    <div class="collapse">
+        <i id="toggle" class="fas fa-list"></i>
+    </div>
+    
+
+    <div class="footer">
+        <div class="footer-items">
+            <div class="footer-item"><a href="#">Home</a></div>
+            <div class="footer-item"><a href="#">Contact</a></div>
+            <div class="footer-item"><a href="#">Copyright</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
