@@ -1,0 +1,120 @@
+html, body{
+    background-color: #34495e;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cards{
+    margin-top: 80px;
+    display: flex;
+    height:500px;
+    position: relative;
+    justify-content: center;
+    margin-left: -100px;
+}
+
+.cards .title{
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100px;
+    margin-left: 130px;
+    margin-top: -300px;
+    animation: p1 4s infinite linear;
+}
+
+.card1, .card2, .card3 {
+    position: relative;
+    height: 440px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.img1, .img2, .img3 {
+    position: absolute;
+}
+
+.cards img{
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    opacity: 0.7;
+    border-radius: 15%;
+}
+
+.cards img:hover{
+    opacity: 1;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.content{
+    background-color: #bdc3c7;
+    margin-top: 350px;
+    margin-left: 20px;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+}
+
+.content-p{
+    /* background-color: red; */
+    color: #2980b9;
+    height: 200px;
+    width: 300px;
+    /* position: relative; */
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    animation: p-c1 4s infinite linear;
+}
+
+#mark, #favorite{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+#mark{
+    opacity: 0;
+    animation: i-mark 4s infinite;
+    animation-delay: 4s;
+}
+
+#favorite{
+    animation: i-favorite 4s infinite;
+    animation-delay: 0s;
+}
+
+i:hover{
+    background-color: #95a5a6;
+    transition: 0.4s;
+}
+
+@keyframes i-mark{
+    50%{
+        opacity: 0;
+    }
+    51%, 100%{
+        opacity: 1;
+    }
+}
+
+@keyframes i-favorite{
+    50%{
+        opacity: 1;
+    }
+    51%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes p1{
+    to{
+        opacity: 0;
+    }
+}
